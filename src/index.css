@@ -1,0 +1,74 @@
+/* Configurações gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui margens e paddings dentro do tamanho dos elementos */
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Evita barras horizontais */
+  background-color: #262626; /* Fundo global escuro */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6; /* Melhorar legibilidade */
+}
+
+/* Ajustes para elementos de código */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Garantia de largura total para o footer e header */
+footer, header {
+  width: 100%; /* Corrigido para garantir que preencha toda a largura da tela */
+  position: relative; /* Evita que o layout quebre */
+  overflow-x: hidden; /* Evita barras horizontais em caso de margens negativas */
+  background-color: #1a1a1a; /* Adiciona fundo escuro aos cabeçalhos e rodapés */
+}
+
+/* Centralização do conteúdo com padding para evitar que o conteúdo encoste nas bordas */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0 20px; /* Espaçamento lateral */
+}
+
+/* Suporte para rolagem suave, aplicado apenas a links de ancoragem */
+a {
+  scroll-behavior: smooth; /* Rolagem suave apenas para links */
+}
+
+/* Restrições de largura para telas muito pequenas */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  footer, header {
+    padding: 10px 20px; /* Ajusta espaçamento interno */
+  }
+
+  .container {
+    padding: 0 10px; /* Ajusta margens laterais */
+  }
+}
+
+/* Transições suaves */
+header, footer {
+  transition: all 0.3s ease-in-out; /* Suaviza mudanças de tamanho ou estilo */
+}
+
+/* Outras melhorias visuais */
+body {
+  color: #e0e0e0; /* Melhorar contraste do texto */
+}
+
+footer {
+  border-top: 1px solid #444; /* Linha sutil no topo do rodapé */
+}

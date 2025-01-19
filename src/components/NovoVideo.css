@@ -1,0 +1,112 @@
+/* Página Geral */
+.novo-video-page {
+  background-color: #191919;
+  color: #f5f5f5;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: calc(100vh - 160px);
+  box-sizing: border-box;
+}
+
+/* Cabeçalho */
+.novo-video-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.novo-video-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+.novo-video-text {
+  font-size: 1.2rem;
+  color: #d9d9d9;
+  margin: 0;
+}
+
+/* Formulário */
+.novo-video-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Campos */
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+/* Inputs */
+.form-input {
+  padding: 0.75rem;
+  background-color: #191919;
+  border: 1px solid #252525;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: #f5f5f5;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #0066ff;
+  background-color: #1f1f1f;
+}
+
+/* Erros */
+.form-input.error {
+  border-color: #cb3531;
+  color: #cb3531;
+}
+
+.form-input.error::placeholder {
+  color: #cb3531;
+}
+
+.form-error {
+  font-size: 0.9rem;
+  color: #cb3531;
+  margin-top: 0.5rem;
+}
+
+/* Botões */
+.form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.form-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #191919;
+  color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.form-button:hover {
+  color: #206ac4;
+  border-color: #206ac4;
+  box-shadow: 0 0 10px #206ac4;
+  transform: scale(1.05);
+}
